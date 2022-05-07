@@ -1,0 +1,32 @@
+{
+  "name": "Antonia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx http-server -p 8080 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass scss/style.scss css/style.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "lint": "prettier --write . && stylelint --fix \"./scss/*.scss\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https:https://github.com/rolonagustin/antonia_rolon_final"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolonagustin/antonia_rolon_final"
+  },
+  "homepage": "https://github.com/rolonagustin/antonia_rolon_final",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1",
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
